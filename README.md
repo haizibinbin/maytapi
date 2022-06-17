@@ -4,7 +4,9 @@
 
 ```php
 <?php
+
 require_once 'vendor/autoload.php';
+
 $product_id = 'xxxxxxxxxx';
 $token = 'xxxxxxxxxx';
 $phone_id = 'xxxxxx';
