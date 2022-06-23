@@ -214,7 +214,7 @@ class Maytapi
      */
     public function createGroup($phone_id, $name, array $numbers)
     {
-        return $this->http_requests(__FUNCTION__, 'POST', $phone_id, compact('name', $numbers));
+        return $this->http_requests(__FUNCTION__, 'POST', $phone_id, compact('name', 'numbers'));
     }
 
     /**
