@@ -19,7 +19,7 @@ class Maytapi
 
     public function http_requests($endpoint, $method, $phone_id, $json_data = [])
     {
-        $client = new Client(['timeout' => 10]);
+        $client = new Client(['timeout' => 60]);
         try {
             $headers = [
                 'x-maytapi-key' => $this->token,
@@ -167,7 +167,7 @@ class Maytapi
         if ($params)
             $json_data = array_merge($json_data, $params[0]);
 
-        $client = new Client(['timeout' => 10]);
+        $client = new Client(['timeout' => 60]);
         try {
             $headers = [
                 'x-maytapi-key' => $this->token,
