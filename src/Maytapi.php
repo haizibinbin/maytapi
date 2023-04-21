@@ -19,7 +19,7 @@ class Maytapi
 
     public function http_requests($endpoint, $method, $phone_id, $json_data = [])
     {
-        $client = new Client(['timeout' => 60]);
+        $client = new Client(['timeout' => 60, 'verify' => false]);
         try {
             $headers = [
                 'x-maytapi-key' => $this->token,
