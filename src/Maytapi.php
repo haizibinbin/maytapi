@@ -380,6 +380,17 @@ class Maytapi
         return $this->http_requests(__FUNCTION__, 'GET', $phone_id);
     }
 
+
+    /**
+     * @param $phone_id
+     * @return array
+     * 由于logout API功能关闭，所以以后退出登录可以用 clear
+     */
+    public function clear($phone_id)
+    {
+        return $this->http_requests(__FUNCTION__, 'GET', $phone_id);
+    }
+
     /**
      * @param $phone_id
      * @param $body
